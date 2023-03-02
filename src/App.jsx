@@ -7,7 +7,9 @@ function App() {
     <div className="flex flex-col items-center">
       <Header />
       <Main />
-      <Form />
+      <div className="bg-white w-full py-8 md:py-20">
+        <Form />
+      </div>
       <Footer />
     </div>
   );

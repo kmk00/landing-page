@@ -4,6 +4,6 @@
 
 @layer base {
   html {
-    @apply font-semibold;
+    @apply font-semibold bg-[#f5f5f7];
   }
 }
