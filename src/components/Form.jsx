@@ -19,6 +19,13 @@ function Form() {
   const submitForm = (event) => {
     event.preventDefault();
     console.log(form);
+    setForm({
+      FirstName: '',
+      LastName: '',
+      Email: '',
+      PhoneNumber: '',
+      CheckBox: false,
+    });
   };
 
   return (
@@ -55,6 +62,7 @@ function Form() {
           type="tel"
           placeholder="Phone Number"
           name="PhoneNumber"
+          pattern="[+]{1}[0-9]{11,14}"
           value={form.PhoneNumber}
           onChange={handleChange}
         ></input>

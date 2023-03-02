@@ -17,13 +17,13 @@ function Footer() {
           <span className="text-gray-400">Email:</span> inbox@finance.com
         </p>
       </address>
-      <div className="flex flex-col">
+      <div className="flex text-right flex-col">
         <div>
           <h3 className="text-blue-600 text-xl mb-4">Subscribe</h3>
           <NumberButton />
         </div>
         <h3 className="text-blue-600 text-xl my-4">Follow us</h3>
-        <div className="flex gap-2">
+        <div className="flex justify-end gap-2">
           <AiFillFacebook size={30} />
           <FaTwitterSquare size={30} />
           <FaInstagramSquare size={30} />
