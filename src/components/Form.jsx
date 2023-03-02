@@ -1,4 +1,13 @@
+import React from 'react';
+
 function Form() {
+  const [form, setForm] = useState({
+    FirstName: '',
+    SecondName: '',
+    email: '',
+    phoneNumber: '',
+  });
+
   return (
     <form className="flex flex-col sm:grid md:grid-cols-2 m-auto items-center max-w-[740px] gap-2 p-4">
       <div className="w-full ">
@@ -53,7 +62,7 @@ function Form() {
           </a>
         </label>
       </div>
-      <button className="bg-red-500 py-2 mt-4 text-white col-span-2 mx-auto px-12 tracking-widest rounded-full">
+      <button className="bg-red-500 py-2 mt-4 text-white col-span-2 mx-auto px-12 tracking-widest rounded-full transition ease-in-out duration-400 hover:bg-red-600">
         SUBMIT
       </button>
     </form>
