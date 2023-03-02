@@ -15,7 +15,7 @@ function NumberButton() {
       </button>
       {displayForm && (
         <>
-          <div className="fixed bg-black/40 top-0 left-0 w-screen h-screen z-0"></div>
+          <div className="fixed bg-black/40 top-0 left-0 w-screen h-screen z-[99]"></div>
 
           <div className="fixed left-1/2 top-1/2 translate-x-[-50%]  translate-y-[-50%] bg-[#f5f5f7] z-[99] rounded-md flex flex-col p-8 pt-20 items-center max-w-[400px]">
             <span
