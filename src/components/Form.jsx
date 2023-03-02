@@ -60,7 +60,7 @@ function Form() {
           required
           className="border-2 p-2 w-full focus:border-blue-500 outline-none"
           type="tel"
-          placeholder="Phone Number"
+          placeholder="+01 234 567 890"
           name="PhoneNumber"
           pattern="[+]{1}[0-9]{11,14}"
           value={form.PhoneNumber}
@@ -72,7 +72,7 @@ function Form() {
           required
           className="border-2 p-2 w-full focus:border-blue-500 outline-none"
           type="email"
-          placeholder="Email"
+          placeholder="john@gmail.com"
           name="Email"
           value={form.Email}
           onChange={handleChange}

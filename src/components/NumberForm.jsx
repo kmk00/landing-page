@@ -25,7 +25,7 @@ function NumberForm({ setDisplayForm }) {
       <input
         required
         type="tel"
-        placeholder="+01 234 567 890 "
+        placeholder="+01 234 567 890"
         pattern="[+]{1}[0-9]{11,14}"
         name="number"
         value={formNumber.number}
