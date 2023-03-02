@@ -1,12 +1,12 @@
 import Footer from './components/Footer';
 import Form from './components/Form';
 import Header from './components/Header';
-import Main from './components/Main';
+import Hero from './components/Hero';
 function App() {
   return (
     <div className="flex flex-col items-center">
       <Header />
-      <Main />
+      <Hero />
       <div className="bg-white w-full py-8 md:py-20">
         <Form />
       </div>
