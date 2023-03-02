@@ -1,5 +1,5 @@
 function Main() {
-  return <main>main</main>;
+  return <main className="h-64">main</main>;
 }
 
 export default Main;

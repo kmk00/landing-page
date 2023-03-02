@@ -1,31 +1,39 @@
 function Form() {
   return (
-    <form className="flex flex-col gap-2 p-4">
-      <input
-        required
-        className="border-2 p-2 focus:border-blue-500 outline-none"
-        type="text"
-        placeholder="First Name"
-      ></input>
-      <input
-        required
-        className="border-2 p-2 focus:border-blue-500 outline-none"
-        type="text"
-        placeholder="Last Name"
-      ></input>
-      <input
-        required
-        className="border-2 p-2 focus:border-blue-500 outline-none"
-        type="tel"
-        placeholder="Phone Number"
-      ></input>
-      <input
-        required
-        className="border-2 p-2 focus:border-blue-500 outline-none"
-        type="email"
-        placeholder="Email"
-      ></input>
-      <div className="flex gap-3">
+    <form className="flex flex-col sm:grid md:grid-cols-2 items-center max-w-[740px] gap-2 p-4">
+      <div className="w-full">
+        <input
+          required
+          className="border-2 p-2 w-full focus:border-blue-500 outline-none"
+          type="text"
+          placeholder="First Name"
+        ></input>
+      </div>
+      <div className="w-full">
+        <input
+          required
+          className="border-2 p-2 w-full  focus:border-blue-500 outline-none"
+          type="text"
+          placeholder="Last Name"
+        ></input>
+      </div>
+      <div className="w-full">
+        <input
+          required
+          className="border-2 p-2 w-full focus:border-blue-500 outline-none"
+          type="tel"
+          placeholder="Phone Number"
+        ></input>
+      </div>
+      <div className="w-full">
+        <input
+          required
+          className="border-2 p-2 w-full focus:border-blue-500 outline-none"
+          type="email"
+          placeholder="Email"
+        ></input>
+      </div>
+      <div className="flex col-span-2 gap-3">
         <input
           required
           className="border-2 p-2 focus:border-blue-500 outline-none"
@@ -45,7 +53,7 @@ function Form() {
           </a>
         </label>
       </div>
-      <button className="bg-red-500 py-2 text-white tracking-widest rounded-full">
+      <button className="bg-red-500 py-2 text-white col-span-2 mx-auto px-12 tracking-widest rounded-full">
         SUBMIT
       </button>
     </form>
