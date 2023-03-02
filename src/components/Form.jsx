@@ -1,21 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Form() {
   const [form, setForm] = useState({
     FirstName: '',
-    SecondName: '',
-    email: '',
-    phoneNumber: '',
+    LastName: '',
+    Email: '',
+    PhoneNumber: '',
+    CheckBox: false,
   });
 
+  const handleChange = (event) => {
+    setForm({ ...form, [event.target.name]: event.target.value });
+  };
+
+  const handleCheckbox = (event) =>
+    setForm({ ...form, [event.target.name]: !form.CheckBox });
+
+  const submitForm = (event) => {
+    event.preventDefault();
+    console.log(form);
+  };
+
   return (
-    <form className="flex flex-col sm:grid md:grid-cols-2 m-auto items-center max-w-[740px] gap-2 p-4">
+    <form
+      onSubmit={submitForm}
+      className="flex flex-col sm:grid md:grid-cols-2 m-auto items-center max-w-[740px] gap-2 p-4"
+    >
       <div className="w-full ">
         <input
           required
           className="border-2 p-2 w-full focus:border-blue-500 outline-none"
           type="text"
+          name="FirstName"
           placeholder="First Name"
+          value={form.FirstName}
+          onChange={handleChange}
         ></input>
       </div>
       <div className="w-full">
@@ -23,7 +42,10 @@ function Form() {
           required
           className="border-2 p-2 w-full  focus:border-blue-500 outline-none"
           type="text"
+          name="LastName"
           placeholder="Last Name"
+          value={form.LastName}
+          onChange={handleChange}
         ></input>
       </div>
       <div className="w-full md:mt-2">
@@ -32,6 +54,9 @@ function Form() {
           className="border-2 p-2 w-full focus:border-blue-500 outline-none"
           type="tel"
           placeholder="Phone Number"
+          name="PhoneNumber"
+          value={form.PhoneNumber}
+          onChange={handleChange}
         ></input>
       </div>
       <div className="w-full md:mt-2">
@@ -40,6 +65,9 @@ function Form() {
           className="border-2 p-2 w-full focus:border-blue-500 outline-none"
           type="email"
           placeholder="Email"
+          name="Email"
+          value={form.Email}
+          onChange={handleChange}
         ></input>
       </div>
       <div className="flex col-span-2 mt-4 gap-3">
@@ -47,7 +75,9 @@ function Form() {
           required
           className="border-2 p-2 focus:border-blue-500 outline-none"
           type="checkbox"
-          placeholder=""
+          name="CheckBox"
+          onClick={handleCheckbox}
+          value={form.CheckBox}
         ></input>
         <label className="text-gray-700 text-sm">
           By clicking here, I state that I have read and understood the{' '}
