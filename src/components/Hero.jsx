@@ -1,8 +1,10 @@
+import img1 from '../../public/business-office-connection-contemporary-working-concept.jpg';
+
 function Hero() {
   return (
-    <section className="h-[1200px] pt-24">
-      <div className="flex flex-col items-center px-8">
-        <div>
+    <section className="pt-24 px-8 pb-20">
+      <div className="flex flex-col md:flex-row items-center gap-8 ">
+        <div className="md:mr-12">
           <h1 className="text-2xl font-bold">
             We Are Creative Digital & Marketing Agency
           </h1>
@@ -11,7 +13,16 @@ function Hero() {
             help you make a better world
           </p>
         </div>
-        <img></img>
+        <img
+          className="mt-8 max-w-[400px] shadow-md shadow-black rounded-3xl rounded-bl-none "
+          src={img1}
+        ></img>
+      </div>
+      <div className="flex flex-col mt-4">
+        <a className="flex gap-4" href="#">
+          <button>P</button>
+          <p>Watch demo video</p>
+        </a>
       </div>
     </section>
   );
