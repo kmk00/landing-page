@@ -7,3 +7,37 @@
     @apply font-semibold bg-[#d8d8d8] cursor-default;
   }
 }
+
+.fade-animation {
+  animation-name: Fade;
+  animation-duration: 4s;
+  opacity: 0;
+}
+
+@keyframes Fade {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 100;
+  }
+
+  80% {
+    opacity: 100;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.filter-gray {
+  filter: invert(99%) sepia(6%) saturate(42%) hue-rotate(152deg)
+    brightness(113%) contrast(78%);
+}
+
+.filler-blue {
+  filter: invert(37%) sepia(90%) saturate(1114%) hue-rotate(199deg)
+    brightness(102%) contrast(93%);
+}

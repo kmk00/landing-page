@@ -2,13 +2,17 @@ import { AiOutlinePlayCircle } from "react-icons/ai";
 import img1 from "../../public/business-office-connection-contemporary-working-concept.jpg";
 import img2 from "../../public/designers-casual-clothes-is-using-laptop.jpg";
 import img3 from "../../public/developing-programmer-team-development-website-design-coding-technologies.jpg";
+import decor1 from "../../public/26432.svg";
 
 function Hero() {
-  const iconStyle = "text-[100px] text-blue-500";
+  const iconStyle = "text-[60px] text-blue-500 shrink-0";
 
   return (
     <section className="pt-24 relative max-w-[1540px] w-full px-20 pb-20">
-      <div className="absolute h-[1050px] sm:h-[950px]  md:w-[200rem] w-11/12 bg-white translate-y-[-20rem] translate-x-[-30%] md:translate-x-[-160rem] xl:translate-x-[-140rem] rounded-br-3xl z-[-99] opacity-95"></div>
+      <span className="absolute h-[1050px] sm:h-[950px]  md:w-[200rem] w-11/12 bg-white translate-y-[-20rem] translate-x-[-30%] md:translate-x-[-160rem] xl:translate-x-[-140rem] rounded-br-3xl z-[-99]"></span>
+      <span className="absolute w-72 filter-gray z-[-98] translate-x-[-30%]">
+        <img src={decor1}></img>
+      </span>
       <div className="flex flex-col relative md:flex-row md:justify-between items-center gap-8">
         <div className="md:mr-12 text-left self-start w-2/3">
           <h1 className="text-3xl md:text-4xl xl:text-[48px] tracking-wider font-bold">
@@ -26,12 +30,19 @@ function Hero() {
         ></img>
       </div>
       <div className="flex flex-col items-center relative md:justify-between gap-4 md:flex-row mt-4">
-        <a className="flex group md:self-start items-center gap-2" href="#">
+        <span className="flex flex-col absolute z-[-9999] right-0 translate-x-10 translate-y-[-0.5rem]">
+          <img className="h-32 filter-gray" src={decor1}></img>
+          <img className="h-32 hidden md:block filter-gray" src={decor1}></img>
+        </span>
+        <span className="absolute hidden md:block bg-transparent w-64 h-64 border-white border-4 rounded-full bottom-0 translate-x-[-5rem] translate-y-[8rem] right-0"></span>
+        <a
+          className="flex relative md:border-b-2 border-blue-500 pb-20 pr-20 group md:self-start items-center gap-2"
+          href="#"
+        >
           <AiOutlinePlayCircle className={iconStyle} />
           <p className="text-blue-500 group-hover:text-blue-800 md:text-xl underline">
             Watch demo video
           </p>
-          <span className="absolute h-1 w-50 bg-blue-700"></span>
         </a>
         <div className="flex-col flex md:items-start items-center gap-4 lg:flex-row">
           <img
@@ -40,7 +51,7 @@ function Hero() {
             alt="decoration image"
           ></img>
           <img
-            className=" max-w-[400px] hidden md:block rounded-[4rem] md:rounded-br-none "
+            className=" xl:max-w-[400px] max-w-[300px] hidden md:block rounded-[4rem] md:rounded-br-none "
             src={img3}
             alt="decoration image"
           ></img>
