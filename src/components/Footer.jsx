@@ -1,6 +1,6 @@
-import { AiFillFacebook } from 'react-icons/ai';
-import { FaInstagramSquare, FaTwitterSquare } from 'react-icons/fa';
-import NumberButton from './NumberButton';
+import { AiFillFacebook } from "react-icons/ai";
+import { FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
+import NumberButton from "./NumberButton";
 
 function Footer() {
   return (
@@ -19,7 +19,7 @@ function Footer() {
       </address>
       <div className="flex text-right flex-col">
         <div>
-          <h3 className="text-blue-600 text-xl mb-4">Subscribe</h3>
+          <h3 className="text-blue-600 text-xl mb-4">Give us your number</h3>
           <NumberButton />
         </div>
         <h3 className="text-blue-600 text-xl my-4">Follow us</h3>
