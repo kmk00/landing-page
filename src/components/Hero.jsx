@@ -8,14 +8,11 @@ function Hero() {
   const iconStyle = "text-[60px] text-blue-500 shrink-0";
 
   return (
-    <section className="pt-24 relative max-w-[1540px] w-full px-20 pb-20">
+    <section className="pt-24 relative max-w-[1540px] w-full px-4 md:px-20 pb-20">
       <span className="absolute h-[1050px] sm:h-[950px]  md:w-[200rem] w-11/12 bg-white translate-y-[-20rem] translate-x-[-30%] md:translate-x-[-160rem] xl:translate-x-[-140rem] rounded-br-3xl z-[-99]"></span>
-      <span className="absolute w-72 filter-gray z-[-98] translate-x-[-30%]">
-        <img src={decor1}></img>
-      </span>
       <div className="flex flex-col relative md:flex-row md:justify-between items-center gap-8">
-        <div className="md:mr-12 text-left self-start w-2/3">
-          <h1 className="text-3xl md:text-4xl xl:text-[48px] tracking-wider font-bold">
+        <div className="md:mr-12 text-left self-start w-full md:w-2/3">
+          <h1 className="text-xl md:text-4xl xl:text-[48px] tracking-wider font-bold">
             We Are Creative Digital & Marketing Agency
           </h1>
           <p className="font-thin text-lg text-gray-600 mt-4">
@@ -36,11 +33,11 @@ function Hero() {
         </span>
         <span className="absolute hidden md:block bg-transparent w-64 h-64 border-white border-4 rounded-full bottom-0 translate-x-[-5rem] translate-y-[8rem] right-0"></span>
         <a
-          className="flex relative md:border-b-2 border-blue-500 pb-20 pr-20 group md:self-start items-center gap-2"
+          className="flex relative md:border-b-4 border-blue-500 pb-20 md:pr-20 group md:self-start items-center gap-2"
           href="#"
         >
           <AiOutlinePlayCircle className={iconStyle} />
-          <p className="text-blue-500 group-hover:text-blue-800 md:text-xl underline">
+          <p className="text-blue-500 group-hover:text-blue-800 md:text-xl text-center underline">
             Watch demo video
           </p>
         </a>

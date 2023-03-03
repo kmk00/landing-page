@@ -41,7 +41,7 @@ function Form() {
       {!isSent ? (
         <form
           onSubmit={submitForm}
-          className="flex flex-col sm:grid md:grid-cols-2 m-auto items-center max-w-[740px] gap-2 p-4"
+          className="flex flex-col sm:grid md:grid-cols-2 m-auto items-center max-w-[740px] gap-2 px-8"
         >
           <div className="w-full ">
             <input

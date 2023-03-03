@@ -4,7 +4,7 @@ import NumberButton from "./NumberButton";
 
 function Footer() {
   return (
-    <footer className="flex w-full  py-12 justify-around">
+    <footer className="flex w-full px-4 py-12 justify-around">
       <address className="not-italic">
         <h3 className="text-blue-600 text-xl mb-4">Our Contact</h3>
         <p className="pt-2">
