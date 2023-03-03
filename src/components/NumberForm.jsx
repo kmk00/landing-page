@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function NumberForm({ setDisplayForm }) {
   const [formNumber, setFormNumber] = useState({
-    number: '',
+    number: "",
     checkBox: false,
   });
 
@@ -10,7 +10,7 @@ function NumberForm({ setDisplayForm }) {
     event.preventDefault();
     setDisplayForm(false);
     console.log(formNumber);
-    setFormNumber({ number: '', checkBox: false });
+    setFormNumber({ number: "", checkBox: false });
   };
 
   const handleChange = (event) => {
@@ -42,15 +42,15 @@ function NumberForm({ setDisplayForm }) {
           value={formNumber.checkBox}
         ></input>
         <label className="text-gray-600  text-sm">
-          By clicking here, I state that I have read and understood the{' '}
+          By clicking here, I state that I have read and understood the{" "}
           <a className="text-red-500 hover:text-red-700 underline" href="#">
-            {' '}
+            {" "}
             Terms and Conditions
-          </a>{' '}
-          and{' '}
+          </a>{" "}
+          and{" "}
           <a className="text-red-500 hover:text-red-700 underline" href="#">
-            {' '}
-            Privacy Statement{' '}
+            {" "}
+            Privacy Statement{" "}
           </a>
         </label>
       </div>

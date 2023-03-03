@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="flex w-full px-4 py-12 justify-around">
       <address className="not-italic">
-        <h3 className="text-blue-600 text-xl mb-4">Our Contact</h3>
+        <h2 className="text-blue-600 text-xl mb-4">Our Contact</h2>
         <p className="pt-2">
           <span className="text-gray-400">Address: </span>Nowy Sacz, Poland
         </p>
@@ -19,10 +19,10 @@ function Footer() {
       </address>
       <div className="flex text-right flex-col">
         <div>
-          <h3 className="text-blue-600 text-xl mb-4">Give us your number</h3>
+          <h2 className="text-blue-600 text-xl mb-4">Give us your number</h2>
           <NumberButton />
         </div>
-        <h3 className="text-blue-600 text-xl my-4">Follow us</h3>
+        <h2 className="text-blue-600 text-xl my-4">Follow us</h2>
         <div className="flex justify-end gap-2">
           <AiFillFacebook size={30} />
           <FaTwitterSquare size={30} />

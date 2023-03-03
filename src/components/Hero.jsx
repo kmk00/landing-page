@@ -28,8 +28,16 @@ function Hero() {
       </div>
       <div className="flex flex-col items-center relative md:justify-between gap-4 md:flex-row mt-4">
         <span className="flex flex-col absolute z-[-9999] right-0 translate-x-10 translate-y-[-0.5rem]">
-          <img className="h-32 filter-gray" src={decor1}></img>
-          <img className="h-32 hidden md:block filter-gray" src={decor1}></img>
+          <img
+            className="h-32 filter-gray"
+            alt="decoration image"
+            src={decor1}
+          ></img>
+          <img
+            className="h-32 hidden md:block filter-gray"
+            alt="decoration image"
+            src={decor1}
+          ></img>
         </span>
         <span className="absolute hidden md:block bg-transparent w-64 h-64 border-white border-4 rounded-full bottom-0 translate-x-[-5rem] translate-y-[8rem] right-0"></span>
         <a
