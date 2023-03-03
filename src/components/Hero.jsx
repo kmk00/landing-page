@@ -1,7 +1,7 @@
 import { AiOutlinePlayCircle } from "react-icons/ai";
-import img1 from "../../public/business-office-connection-contemporary-working-concept.jpg";
-import img2 from "../../public/designers-casual-clothes-is-using-laptop.jpg";
-import img3 from "../../public/developing-programmer-team-development-website-design-coding-technologies.jpg";
+import img1 from "../../public/business-office-connection-contemporary-working-concept.webp";
+import img2 from "../../public/designers-casual-clothes-is-using-laptop.webp";
+import img3 from "../../public/developing-programmer-team-development-website-design-coding-technologies.webp";
 import decor1 from "../../public/26432.svg";
 
 function Hero() {
