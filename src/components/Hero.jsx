@@ -8,8 +8,8 @@ function Hero() {
   const iconStyle = "text-[60px] text-blue-500 shrink-0";
 
   return (
-    <section className="pt-24 relative max-w-[1540px] w-full px-4 md:px-20 pb-20">
-      <span className="absolute h-[1050px] sm:h-[950px]  md:w-[200rem] w-11/12 bg-white translate-y-[-20rem] translate-x-[-30%] md:translate-x-[-160rem] xl:translate-x-[-140rem] rounded-br-3xl z-[-99]"></span>
+    <section className="pt-24 relative max-w-[1540px] bg-white md:bg-transparent w-full px-4 md:px-20 md:pb-20">
+      <span className="absolute h-[1050px] sm:h-[950px]  md:w-[200rem] md:block hidden bg-white translate-y-[-20rem]  md:translate-x-[-160rem] xl:translate-x-[-140rem] rounded-br-3xl z-[-99]"></span>
       <div className="flex flex-col relative md:flex-row md:justify-between items-center gap-8">
         <div className="md:mr-12 text-left self-start w-full md:w-2/3">
           <h1 className="text-xl md:text-4xl xl:text-[48px] tracking-wider font-bold">
@@ -27,7 +27,7 @@ function Hero() {
         ></img>
       </div>
       <div className="flex flex-col items-center relative md:justify-between gap-4 md:flex-row mt-4">
-        <span className="flex flex-col absolute z-[-9999] right-0 translate-x-10 translate-y-[-0.5rem]">
+        <span className="hidden md:flex flex-col absolute z-[-9999] right-0 translate-x-10 translate-y-[-0.5rem]">
           <img
             className="h-32 filter-gray"
             alt="decoration image"
@@ -41,7 +41,7 @@ function Hero() {
         </span>
         <span className="absolute hidden md:block bg-transparent w-64 h-64 border-white border-4 rounded-full bottom-0 translate-x-[-5rem] translate-y-[8rem] right-0"></span>
         <a
-          className="flex relative md:border-b-4 border-blue-500 pb-20 md:pr-20 group md:self-start items-center gap-2"
+          className="flex relative md:border-b-4 border-blue-500 md:pb-20 md:pr-20 group md:self-start items-center gap-2"
           href="#"
         >
           <AiOutlinePlayCircle className={iconStyle} />
