@@ -1,3 +1,1 @@
-# landing-page
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/vitejs-vite-4dyhnc)
+https://kmk00-landing-page.netlify.app/
