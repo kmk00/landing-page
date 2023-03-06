@@ -10,7 +10,7 @@ function Hero() {
 
   return (
     <section className="pt-24 relative max-w-[1540px] bg-white md:bg-transparent w-full px-4 md:px-20 md:pb-8">
-      <span className="absolute h-[1050px] sm:h-[950px]  md:w-[200rem] md:block hidden bg-white translate-y-[-20rem]  md:translate-x-[-160rem] xl:translate-x-[-140rem] rounded-br-3xl z-[-99]"></span>
+      <span className="absolute sm:h-[950px] md:w-[200rem] md:block hidden bg-white translate-y-[-17rem]  md:translate-x-[-160rem] xl:translate-x-[-140rem] rounded-br-3xl z-[-99]"></span>
       <div className="flex flex-col relative md:flex-row md:justify-between items-center gap-8">
         <div className="md:mr-12 text-left self-start w-full md:w-3/4">
           <h1 className="text-2xl md:text-4xl xl:text-[48px] tracking-wider font-bold">
@@ -59,12 +59,12 @@ function Hero() {
         </a>
         <div className="flex-col flex md:items-start items-center gap-4 lg:flex-row">
           <img
-            className=" max-w-[500px] hidden xl:block  rounded-[4rem] md:rounded-bl-none"
+            className=" max-w-[450px] hidden xl:block  rounded-[4rem] md:rounded-bl-none"
             src={img2}
             alt="decoration image"
           ></img>
           <img
-            className=" xl:max-w-[400px] max-w-[300px] hidden md:block rounded-[4rem] md:rounded-br-none "
+            className=" xl:max-w-[265px] max-w-[300px] hidden md:block rounded-[4rem] md:rounded-br-none "
             src={img3}
             alt="decoration image"
           ></img>
