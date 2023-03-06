@@ -6,8 +6,6 @@ import buttonImg from "../../public/button.svg";
 import line from "../../public/line.svg";
 
 function Hero() {
-  const iconStyle = "text-[60px] text-blue-500 shrink-0";
-
   return (
     <section className="pt-24 relative max-w-[1540px] bg-white md:bg-transparent w-full px-4 md:px-20 md:pb-8">
       <span className="absolute sm:h-[950px] md:w-[200rem] md:block hidden bg-white translate-y-[-17rem]  md:translate-x-[-160rem] xl:translate-x-[-140rem] rounded-br-3xl z-[-99]"></span>

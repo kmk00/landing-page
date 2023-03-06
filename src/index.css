@@ -6,8 +6,25 @@
   html {
     @apply font-semibold bg-[#d8d8d8] cursor-default;
   }
-  html {
+  html,
+  form,
+  label,
+  input {
     font-family: Poppins, sans-serif;
+  }
+
+  input {
+    @apply border-[3px] border-black !important;
+  }
+
+  input:focus {
+    @apply bg-blue-200;
+  }
+
+  input,
+  label {
+    font-weight: 400;
+    z-index: 50;
   }
 
   h2 {

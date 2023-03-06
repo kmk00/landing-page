@@ -24,7 +24,7 @@ function NumberButton() {
           <div className="fixed left-1/2 top-1/2 translate-x-[-50%]  translate-y-[-50%] bg-[#f5f5f7] z-[99999999] rounded-md flex flex-col p-8 pt-20 items-center w-11/12 mx-1 md:max-w-[400px]">
             <span
               onClick={() => setDisplayForm(false)}
-              className="mt-8 top-[-2rem] bg-red-500 hover:bg-red-600 rounded-bl-xl rounded-tr-md right-0 p-4 fixed cursor-pointer"
+              className="mt-8 top-[-2rem] bg-blue-500 hover:bg-blue-600 rounded-bl-xl rounded-tr-md right-0 p-4 fixed cursor-pointer"
             >
               <AiOutlineClose size={20} />
             </span>

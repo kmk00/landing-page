@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
 import uuid from "react-uuid";
 import { writeUserToDatabase } from "../firebase";
+import decor1 from "../../public/26432.svg";
 
 function Form() {
   const [form, setForm] = useState({
@@ -55,10 +56,17 @@ function Form() {
 
   return (
     <>
+      <div className="absolute">
+        <img
+          className="h-64 rotate-45 translate-x-[-40%] translate-y-10 opacity-60  hidden xl:block filter-gray"
+          alt="decoration image"
+          src={decor1}
+        ></img>
+      </div>
       {!isSent ? (
         <form
           onSubmit={submitForm}
-          className="flex flex-col sm:grid md:grid-cols-2 m-auto items-center max-w-[740px] gap-2 px-8"
+          className="flex flex-col text-2xl sm:grid md:grid-cols-2 m-auto items-center max-w-[940px] gap-2 px-8"
         >
           <div className="w-full ">
             <input
@@ -66,46 +74,46 @@ function Form() {
               className="border-2 p-2 w-full focus:border-blue-500 outline-none"
               type="text"
               name="FirstName"
-              placeholder="First Name"
               value={form.FirstName}
               onChange={handleChange}
             ></input>
+            <label className="text-sm pl-2 text-gray-600">First name</label>
           </div>
           <div className="w-full">
             <input
               required
-              className="border-2 p-2 w-full  focus:border-blue-500 outline-none"
+              className="border-2 p-2 w-full focus:border-blue-500 outline-none"
               type="text"
               name="LastName"
-              placeholder="Last Name"
               value={form.LastName}
               onChange={handleChange}
             ></input>
+            <label className="text-sm pl-2 text-gray-600">Last name</label>
           </div>
           <div className="w-full md:mt-2">
             <input
               required
               className="border-2 p-2 w-full focus:border-blue-500 outline-none"
               type="tel"
-              placeholder="+01 234 567 890"
               name="PhoneNumber"
-              pattern="[+]{1}[0-9]{11,14}"
+              pattern="[0-9]{9,12}"
               value={form.PhoneNumber}
               onChange={handleChange}
             ></input>
+            <label className="text-sm pl-2 text-gray-600">Phone number</label>
           </div>
           <div className="w-full md:mt-2">
             <input
               required
               className="border-2 p-2 w-full focus:border-blue-500 outline-none"
               type="email"
-              placeholder="john@gmail.com"
               name="Email"
               value={form.Email}
               onChange={handleChange}
             ></input>
+            <label className="text-sm pl-2 text-gray-600">Email</label>
           </div>
-          <div className="flex col-span-2 mt-4 gap-3">
+          <div className="flex self-center col-span-2 mt-4 gap-3">
             <input
               required
               className="border-2 p-2 focus:border-blue-500 outline-none"
@@ -116,18 +124,24 @@ function Form() {
             ></input>
             <label className="text-gray-700 text-sm">
               By clicking here, I state that I have read and understood the{" "}
-              <a className="text-red-500 hover:text-red-700 underline" href="#">
+              <a
+                className="text-blue-500 hover:text-blue-700 underline"
+                href="#"
+              >
                 {" "}
                 Terms and Conditions
               </a>{" "}
               and{" "}
-              <a className="text-red-500 hover:text-red-700 underline" href="#">
+              <a
+                className="text-blue-500 hover:text-blue-700 underline"
+                href="#"
+              >
                 {" "}
                 Privacy Statement{" "}
               </a>
             </label>
           </div>
-          <button className="bg-red-500 py-2 mt-4 text-white col-span-2 mx-auto px-12 tracking-widest rounded-full transition ease-in-out duration-400 hover:bg-red-600">
+          <button className="bg-blue-500 py-2 mt-4 text-white col-span-2 mx-auto px-12 tracking-widest rounded-full transition ease-in-out duration-400 hover:bg-blue-600">
             SUBMIT
           </button>
         </form>

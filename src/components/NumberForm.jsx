@@ -35,7 +35,6 @@ function NumberForm({ setDisplayForm }) {
       <input
         required
         type="tel"
-        placeholder="+01 234 567 890"
         pattern="[+]{1}[0-9]{11,14}"
         name="number"
         value={formNumber.number}
@@ -53,18 +52,18 @@ function NumberForm({ setDisplayForm }) {
         ></input>
         <label className="text-gray-600  text-sm">
           By clicking here, I state that I have read and understood the{" "}
-          <a className="text-red-500 hover:text-red-700 underline" href="#">
+          <a className="text-blue-500 hover:text-blue-700 underline" href="#">
             {" "}
             Terms and Conditions
           </a>{" "}
           and{" "}
-          <a className="text-red-500 hover:text-red-700 underline" href="#">
+          <a className="text-blue-500 hover:text-blue-700 underline" href="#">
             {" "}
             Privacy Statement{" "}
           </a>
         </label>
       </div>
-      <button className="bg-red-500 px-4 py-1 my-4 text-white w-full rounded-xl hover:bg-red-600 focus:border-none">
+      <button className="bg-blue-500 px-4 py-1 my-4 text-white w-full rounded-xl hover:bg-blue-600 focus:border-none">
         Send
       </button>
     </form>
