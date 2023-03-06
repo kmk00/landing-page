@@ -18,7 +18,14 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-function writeUserToDatabase(id, firstName, secondName, telephone, email) {
+function writeUserToDatabase(
+  id,
+  firstName,
+  secondName,
+  telephone,
+  email,
+  date
+) {
   const db = getDatabase();
   const reference = ref(db, "users/" + id);
   set(reference, {
@@ -26,7 +33,7 @@ function writeUserToDatabase(id, firstName, secondName, telephone, email) {
     secondName: secondName,
     telephone: telephone,
     email: email,
-    date: Date.now(),
+    date: date,
   });
 }
 

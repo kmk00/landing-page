@@ -12,6 +12,12 @@ function Form() {
     CheckBox: false,
   });
 
+  function getDate() {
+    const timeElapsed = Date.now();
+    const today = new Date(timeElapsed);
+    return today.toUTCString();
+  }
+
   const [isSent, setIsSent] = useState(false);
 
   const handleChange = (event) => {
@@ -31,7 +37,8 @@ function Form() {
       form.FirstName,
       form.LastName,
       form.PhoneNumber,
-      form.Email
+      form.Email,
+      getDate()
     );
 
     setForm({
