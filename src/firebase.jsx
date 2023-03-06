@@ -7,14 +7,15 @@ import { getDatabase, ref, set } from "firebase/database";
 // Your web app's Firebase configuration
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_REACT_API_KEY,
-  authDomain: import.meta.env.VITE_REACT_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_REACT_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_REACT_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_REACT_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_REACT_APP_ID,
+  apiKey: "AIzaSyA-jL9TF7YX3fTE4QNENIJKY5iORQHgt7o",
+  authDomain: "landing-page-73901.firebaseapp.com",
+  projectId: "landing-page-73901",
+  storageBucket: "landing-page-73901.appspot.com",
+  messagingSenderId: "852907351231",
+  appId: "1:852907351231:web:31b091baefc2f5a040ba0a",
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 function writeUserToDatabase(id, firstName, secondName, telephone, email) {
