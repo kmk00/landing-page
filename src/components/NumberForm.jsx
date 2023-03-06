@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import uuid from "react-uuid";
+import { writeTelephone } from "../firebase";
 
 function NumberForm({ setDisplayForm }) {
   const [formNumber, setFormNumber] = useState({
@@ -8,10 +10,18 @@ function NumberForm({ setDisplayForm }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    const date = getDate();
+
+    writeTelephone(uuid(), formNumber.number, date);
+    alert("Success");
     setDisplayForm(false);
-    console.log(formNumber);
     setFormNumber({ number: "", checkBox: false });
   };
+
+  function getDate() {
+    const today = new Date(Date.now());
+    return `${today.getDate()}-${today.getMonth()}-${today.getFullYear()} ${today.getHours()}:${today.getMinutes()}`;
+  }
 
   const handleChange = (event) => {
     setFormNumber({ ...formNumber, [event.target.name]: event.target.value });

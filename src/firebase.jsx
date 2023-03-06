@@ -37,4 +37,13 @@ function writeUserToDatabase(
   });
 }
 
-export { writeUserToDatabase };
+function writeTelephone(id, telephone, date) {
+  const db = getDatabase();
+  const reference = ref(db, "phone_numbers/" + id);
+  set(reference, {
+    telephone: telephone,
+    date: date,
+  });
+}
+
+export { writeUserToDatabase, writeTelephone };
