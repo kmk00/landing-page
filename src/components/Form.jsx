@@ -13,9 +13,8 @@ function Form() {
   });
 
   function getDate() {
-    const timeElapsed = Date.now();
-    const today = new Date(timeElapsed);
-    return today.toUTCString();
+    const today = new Date(Date.now());
+    return `${today.getDate()}-${today.getMonth()}-${today.getFullYear()} ${today.getHours()}:${today.getMinutes()}`;
   }
 
   const [isSent, setIsSent] = useState(false);
@@ -30,7 +29,7 @@ function Form() {
   const submitForm = (event) => {
     event.preventDefault();
     setIsSent(true);
-    console.log(form);
+    const date = getDate();
 
     writeUserToDatabase(
       uuid(),
@@ -38,7 +37,7 @@ function Form() {
       form.LastName,
       form.PhoneNumber,
       form.Email,
-      getDate()
+      date
     );
 
     setForm({
