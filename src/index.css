@@ -6,6 +6,9 @@
   html {
     @apply font-semibold bg-[#d8d8d8] cursor-default;
   }
+  html {
+    font-family: Poppins, sans-serif;
+  }
 }
 
 .fade-animation {

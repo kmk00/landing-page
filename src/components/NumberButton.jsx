@@ -10,7 +10,7 @@ function NumberButton() {
     <>
       <button
         onClick={() => setDisplayForm(true)}
-        className="text-blue-400 border-2 border-blue-400 px-4 py-4 md:py-1 rounded-3xl transition ease-in-out duration-300 hover:bg-blue-100"
+        className="text-blue-400 border-2 border-blue-400 px-4 py-4 font-normal md:py-1 rounded-3xl transition ease-in-out duration-300 hover:bg-blue-100"
       >
         <span className="hidden md:block">Leave Number</span>
         <span className="md:hidden">
