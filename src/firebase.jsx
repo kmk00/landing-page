@@ -26,6 +26,7 @@ function writeUserToDatabase(id, firstName, secondName, telephone, email) {
     secondName: secondName,
     telephone: telephone,
     email: email,
+    date: Date.now(),
   });
 }
 
