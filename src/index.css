@@ -14,7 +14,7 @@
   }
 
   input {
-    @apply border-[3px] border-black !important;
+    @apply border-[3px] border-blue-800 !important;
   }
 
   input:focus {
