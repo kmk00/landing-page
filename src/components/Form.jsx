@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
+import uuid from "react-uuid";
+import { writeUserToDatabase } from "../firebase";
 
 function Form() {
   const [form, setForm] = useState({
@@ -23,6 +25,15 @@ function Form() {
     event.preventDefault();
     setIsSent(true);
     console.log(form);
+
+    writeUserToDatabase(
+      uuid(),
+      form.FirstName,
+      form.LastName,
+      form.PhoneNumber,
+      form.Email
+    );
+
     setForm({
       FirstName: "",
       LastName: "",
