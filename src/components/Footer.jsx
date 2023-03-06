@@ -7,14 +7,14 @@ function Footer() {
     <footer className="flex w-full px-4 py-12 justify-around">
       <address className="not-italic">
         <h2 className="text-blue-600 text-xl mb-4">Our Contact</h2>
-        <p className="pt-2">
-          <span className="text-gray-400">Address: </span>Nowy Sacz, Poland
+        <p className="pt-2 font-normal">
+          <span className="text-gray-400 ml-2">Address: </span>Nowy Sacz, Poland
         </p>
-        <p className="pt-2">
-          <span className="text-gray-400">Tel:</span> +48 723 421 432
+        <p className="pt-2 font-normal">
+          <span className="text-gray-400 ml-2">Tel:</span> +48 723 421 432
         </p>
-        <p className="pt-2">
-          <span className="text-gray-400">Email:</span> inbox@finance.com
+        <p className="pt-2 font-normal">
+          <span className="text-gray-400 ml-2">Email:</span> inbox@finance.com
         </p>
       </address>
       <div className="flex text-right flex-col">
