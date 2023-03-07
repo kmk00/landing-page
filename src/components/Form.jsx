@@ -113,7 +113,7 @@ function Form() {
             ></input>
             <label className="text-sm pl-2 text-gray-600">Email</label>
           </div>
-          <div className="flex self-center col-span-2 mt-4 gap-3">
+          <div className="flex mx-auto col-span-2 mt-4 gap-3">
             <input
               required
               className="border-2 p-2 focus:border-blue-500 outline-none"

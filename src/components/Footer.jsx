@@ -8,13 +8,13 @@ function Footer() {
       <address className="not-italic">
         <h2 className="text-blue-600 text-xl mb-4">Our Contact</h2>
         <p className="pt-2 font-normal">
-          <span className="text-gray-400 ml-2">Address: </span>Nowy Sacz, Poland
+          <span className="text-blue-500">Address: </span>Nowy Sacz, Poland
         </p>
         <p className="pt-2 font-normal">
-          <span className="text-gray-400 ml-2">Tel:</span> +48 723 421 432
+          <span className="text-blue-500">Tel:</span> +48 723 421 432
         </p>
         <p className="pt-2 font-normal">
-          <span className="text-gray-400 ml-2">Email:</span> inbox@finance.com
+          <span className="text-blue-500">Email:</span> inbox@finance.com
         </p>
       </address>
       <div className="flex text-right flex-col">
