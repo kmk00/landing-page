@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
 import uuid from "react-uuid";
 import { writeUserToDatabase } from "../firebase";
-import decor1 from "../../public/26432.svg";
+import decor1 from "/26432.svg";
 
 function Form() {
   const [form, setForm] = useState({

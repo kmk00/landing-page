@@ -1,9 +1,9 @@
-import img1 from "../../public/business-office-connection-contemporary-working-concept.webp";
-import img2 from "../../public/designers-casual-clothes-is-using-laptop.webp";
-import img3 from "../../public/decoration.png";
-import decor1 from "../../public/26432.svg";
-import buttonImg from "../../public/button.svg";
-import line from "../../public/line.svg";
+import img1 from "/business-office-connection-contemporary-working-concept.webp";
+import img2 from "/designers-casual-clothes-is-using-laptop.webp";
+import img3 from "/decoration.png";
+import decor1 from "/26432.svg";
+import buttonImg from "/button.svg";
+import line from "/line.svg";
 
 function Hero() {
   return (
